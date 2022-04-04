@@ -1,15 +1,19 @@
 #!/usr/bin/env python
+"""Brain-games main script."""
 
-import brain_games.cli
+from brain_games import cli
+
 
 def say_welcome():
+    """Say Welcome."""
     return ('Welcome to the Brain Games!')
 
 
 def main():
+    """Define main function."""
     print(say_welcome())
-    brain_games.cli.welcome_user()
+    cli.welcome_user()
 
-    
+
 if __name__ == '__main__':
     main()

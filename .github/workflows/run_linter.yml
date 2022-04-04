@@ -1,0 +1,11 @@
+name: linter-check
+
+on:
+  push:
+
+jobs:
+  linter:
+    runs-on: ubuntu-latest
+    steps:
+      - name: linter project check
+      - run: make linter
