@@ -6,3 +6,7 @@
 
 ### Linter code check
 [![Linter status](https://github.com/AlexMusin/python-project-lvl1/workflows/linter-check/badge.svg)](https://github.com/AlexMusin/python-project-lvl1/actions)
+
+
+### Brain-even game asciinema:
+https://asciinema.org/a/xMw7e0XBxC43wdz5TcqbvjPbR
