@@ -1,47 +1,22 @@
 #!/usr/bin/env python
-"""Choose even game."""
+"""Even game launch."""
 
-import random
-import sys
-
-import prompt
-
-
-def error():
-    """Say error."""
-    incorrect = 'Incorrect!\nPlease run the game again'
-    sys.exit(incorrect)
+from brain_games.games import err_exit
+from brain_games.games import greet
+from brain_games.games import game_even
 
 
 def main():
     """Play odd-or-even game."""
-    print('Welcome to the Brain Games!')
-    username = prompt.string('May I have your name? ')
-    greet = ('Hello, {0}'.format(username))
-    print(greet)
-    print('Answer "yes" if the number is even, otherwise answer "no".')
+    username = greet.greeting()
+    print(game_even.rules)
     index = 0
-    right_limit = -256
-    left_limit = 255
     while index < 3:
-        number = random.randint(right_limit, left_limit)    # noqa: S311
-        print('Question: {0}'.format(number))
-        answer = prompt.string('Your answer: ')
-        if answer == 'yes':
-            answer = 1
-        elif answer == 'no':
-            answer = 0
-        else:
-            error()
-        is_even = number % 2 == 0
-        if (is_even == answer):
+        condition, answer = game_even.even()
+        if condition == answer:
             print('Correct!')
             index += 1
         else:
-            error()
+            err_exit.error()
     if index == 3:
         print('Congratulations, {0}!'.format(username))
-
-
-if __name__ == '__main__':
-    main()
