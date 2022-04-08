@@ -1,9 +1,7 @@
 #!/usr/bin/env python
 """Even game launch."""
 
-from brain_games.games import err_exit
-from brain_games.games import greet
-from brain_games.games import game_even
+from brain_games.games import err_exit, game_even, greet
 
 
 def main():
