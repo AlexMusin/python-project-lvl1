@@ -10,3 +10,6 @@
 
 ### Brain-even game asciinema:
 https://asciinema.org/a/xMw7e0XBxC43wdz5TcqbvjPbR
+
+### Brain-calc game asciinema:
+https://asciinema.org/a/2yKaIq5noPZMxTeb4SqEnKoAp
