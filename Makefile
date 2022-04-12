@@ -13,6 +13,12 @@ brain-games:
 brain-even:
 	poetry run brain-even
 
+brain-gcd:
+	poetry run brain-gcd
+
+brain-calc:
+	poetry run brain-calc
+
 package-install:
 	python3 -m pip install --user --force-reinstall dist/*.whl
 
