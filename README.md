@@ -9,6 +9,7 @@
 
 
 ### Brain-even game asciinema:
+<<<<<<< HEAD
 https://asciinema.org/a/T9Fl67Ab0GlsYuJiqUOVAKCbE
 
 ### Brain-calc game asciinema:
@@ -16,3 +17,6 @@ https://asciinema.org/a/j6ymO6A9frLv3X2en9mvOFOky
 
 ### Brain-gcd game asciinema:
 https://asciinema.org/a/iatblbGpjdmfvTi5kHDHFaU6m
+
+### Brain-progression game asciinema:
+https://asciinema.org/a/e7ueIZ50MAtjzKwrHicSpSliK

@@ -19,6 +19,9 @@ brain-gcd:
 brain-calc:
 	poetry run brain-calc
 
+brain-progression:
+	poetry run brain-progression
+
 package-install:
 	python3 -m pip install --user --force-reinstall dist/*.whl
 
