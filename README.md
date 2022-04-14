@@ -9,7 +9,6 @@
 
 
 ### Brain-even game asciinema:
-<<<<<<< HEAD
 https://asciinema.org/a/T9Fl67Ab0GlsYuJiqUOVAKCbE
 
 ### Brain-calc game asciinema:
