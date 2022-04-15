@@ -33,7 +33,7 @@ Game installation and gameplay are shown in asciinema below
 
 ### Brain-game package install asciinema:
 https://asciinema.org/a/UorifUpPmhLiZzmVTALR10Fsn
-<script id="asciicast-UorifUpPmhLiZzmVTALR10Fsn" src="https://asciinema.org/a/UorifUpPmhLiZzmVTALR10Fsn.js" async></script>
+[![asciicast](https://asciinema.org/a/UorifUpPmhLiZzmVTALR10Fsn.svg)](https://asciinema.org/a/UorifUpPmhLiZzmVTALR10Fsn)
 
 ### Brain-even game asciinema:
 https://asciinema.org/a/T9Fl67Ab0GlsYuJiqUOVAKCbE
