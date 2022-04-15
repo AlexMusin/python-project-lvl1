@@ -3,13 +3,16 @@ Welcome to Brain Games educational project.
 1. Project description:
 
 Brain Games is a first Hexlet educational Python project. It contains 5 logical games that user can launch separately:
-brain-calc              : calculate result of simple arythmetical expression
-brain-even              : decide if given random integer is an even or odd number
-brain-gcd               : calculate the lowest common divisor for two random integer numbers
-brain-prime             : decide if given random integer is a prime number
-brain-progression       : calculate value of missing member of arythmetical progression 
 
-All games stop running in case of incorrect answer.
+brain-calc              : calculate result of simple arythmetical expression
+
+brain-even              : decide if given random integer is an even or odd number
+
+brain-gcd               : calculate the lowest common divisor for two random integer numbers
+
+brain-prime             : decide if given random integer is a prime number
+
+brain-progression       : calculate value of missing member of arythmetical progression 
 
 2. To install Brain Games please use command:
 python3 -m pip install --user hexlet_code-0.1.0-py3-none-any.whl
@@ -17,6 +20,7 @@ python3 -m pip install --user hexlet_code-0.1.0-py3-none-any.whl
 Python (3.6 and newer) and actual pip pre-istalled are necessary.
 
 3. To launch the game please type it's name (see paragraph 1) and press enter.
+All games stop running in case of incorrect answer.
 Any non-numerical answers (except 'yes' and 'no') are treating as incorrect.
 
 Game installation and gameplay are shown in asciinema below
