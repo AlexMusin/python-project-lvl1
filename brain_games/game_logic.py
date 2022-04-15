@@ -3,6 +3,8 @@
 
 from brain_games import err_exit, greet
 
+ROUNDS = 3
+
 
 def logic(game_name):
     """Run game logic."""  # noqa: DAR101
@@ -11,7 +13,7 @@ def logic(game_name):
     rules = eval('game_{0}.RULES'.format(game_name))
     print(rules)
     index = 0
-    while index < 3:
+    while index < ROUNDS:
         cond, answer = eval('game_{0}.run_game()'.format(game_name))
         if cond == answer:
             print('Correct!')
