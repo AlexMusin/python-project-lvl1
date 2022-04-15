@@ -4,9 +4,9 @@ import random
 
 import prompt
 
-left_limit = -25
-right_limit = 25
-rules = 'Find the greatest common divisor of given numbers.'
+LEFT_LIMIT = -25
+RIGHT_LIMIT = 25
+RULES = 'Find the greatest common divisor of given numbers.'
 
 
 def run_game():  # noqa: WPS231
@@ -17,8 +17,8 @@ def run_game():  # noqa: WPS231
     number2 = 1
     while counter == 0:
         while number1 != 0 and number2 != 0 and counter2 == 0:
-            number1 = random.randint(left_limit, right_limit)
-            number2 = random.randint(left_limit, right_limit)
+            number1 = random.randint(LEFT_LIMIT, RIGHT_LIMIT)
+            number2 = random.randint(LEFT_LIMIT, RIGHT_LIMIT)
             counter2 += 1
         index = 1
         divisor_list = []

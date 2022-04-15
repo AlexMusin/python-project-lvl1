@@ -4,14 +4,14 @@ import random
 
 import prompt
 
-left_limit = 1
-right_limit = 53
-rules = 'Answer "yes" if given number is prime. Otherwise answer "no".'
+LEFT_LIMIT = 1
+RIGHT_LIMIT = 53
+RULES = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
 def run_game():
     """Return variables for game logic."""
-    given_number = random.randint(left_limit, right_limit)
+    given_number = random.randint(LEFT_LIMIT, RIGHT_LIMIT)
     is_prime = 1
     index = 2
     modifier = 2 if given_number < 3 else 0

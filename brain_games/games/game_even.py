@@ -5,14 +5,14 @@ import random
 
 import prompt
 
-rules = 'Answer "yes" if the number is even, otherwise answer "no".'
-right_limit = -256
-left_limit = 255
+RULES = 'Answer "yes" if the number is even, otherwise answer "no".'
+LEFT_LIMIT = -256
+RIGHT_LIMIT = 255
 
 
 def run_game():
     """Return even-game variables."""
-    number = random.randint(right_limit, left_limit)
+    number = random.randint(LEFT_LIMIT, RIGHT_LIMIT)
     cond = number % 2 == 1
     if cond == 0:
         cond = 'yes'

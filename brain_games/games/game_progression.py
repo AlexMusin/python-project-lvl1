@@ -4,7 +4,7 @@ import random
 
 import prompt
 
-rules = 'What is the result of the expression?'
+RULES = 'What number is missing in the progression?'
 
 
 def run_game():  # noqa: WPS210

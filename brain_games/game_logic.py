@@ -8,7 +8,7 @@ def logic(game_name):
     """Run game logic."""  # noqa: DAR101
     username = greet.greeting()
     exec('from brain_games.games import game_{0}'.format(game_name))
-    rules = eval('game_{0}.rules'.format(game_name))
+    rules = eval('game_{0}.RULES'.format(game_name))
     print(rules)
     index = 0
     while index < 3:
