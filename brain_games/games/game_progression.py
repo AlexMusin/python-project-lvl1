@@ -25,7 +25,7 @@ def run_game():  # noqa: WPS210
         element += step
     cond = str(progression[q_index])
     progression[q_index] = '..'
-    progression = (', '.join(map(str, progression)))
+    progression = (' '.join(map(str, progression)))
     print('Question: {0}'.format(progression))
     answer = prompt.string('Your answer: ')
     return (cond, answer)
