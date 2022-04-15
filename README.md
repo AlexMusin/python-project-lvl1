@@ -32,20 +32,19 @@ Game installation and gameplay are shown in asciinema below
 
 
 ### Brain-game package install asciinema:
-https://asciinema.org/a/UorifUpPmhLiZzmVTALR10Fsn
 [![asciicast](https://asciinema.org/a/UorifUpPmhLiZzmVTALR10Fsn.svg)](https://asciinema.org/a/UorifUpPmhLiZzmVTALR10Fsn)
 
 ### Brain-even game asciinema:
-https://asciinema.org/a/T9Fl67Ab0GlsYuJiqUOVAKCbE
+[![asciicast](https://asciinema.org/a/T9Fl67Ab0GlsYuJiqUOVAKCbE.svg)](https://asciinema.org/a/T9Fl67Ab0GlsYuJiqUOVAKCbE)
 
 ### Brain-calc game asciinema:
-https://asciinema.org/a/j6ymO6A9frLv3X2en9mvOFOky
+[![asciicast](https://asciinema.org/a/j6ymO6A9frLv3X2en9mvOFOky.svg)](https://asciinema.org/a/j6ymO6A9frLv3X2en9mvOFOky)
 
 ### Brain-gcd game asciinema:
-https://asciinema.org/a/iatblbGpjdmfvTi5kHDHFaU6m
+[![asciicast](https://asciinema.org/a/iatblbGpjdmfvTi5kHDHFaU6m.svg)](https://asciinema.org/a/iatblbGpjdmfvTi5kHDHFaU6m)
 
 ### Brain-progression game asciinema:
-https://asciinema.org/a/e7ueIZ50MAtjzKwrHicSpSliK
+[![asciicast](https://asciinema.org/a/e7ueIZ50MAtjzKwrHicSpSliK.svg)](https://asciinema.org/a/e7ueIZ50MAtjzKwrHicSpSliK)
 
 ### Brain-prime game asciinema:
-https://asciinema.org/a/udIUnSQuDctzbavWhAYhJbKXA
+[![asciicast](https://asciinema.org/a/udIUnSQuDctzbavWhAYhJbKXA.svg)](https://asciinema.org/a/udIUnSQuDctzbavWhAYhJbKXA)
