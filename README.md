@@ -29,7 +29,7 @@ Game installation and gameplay are shown in asciinema below
 [![Actions Status](https://github.com/AlexMusin/python-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/AlexMusin/python-project-lvl1/actions)
 
 ### CodeClimate Mainteinability badge
-<a href="https://codeclimate.com/github/codeclimate/codeclimate/maintainability"><img src="https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability" /></a>
+<a href="https://codeclimate.com/github/AlexMusin/python-project-lvl1/maintainability"><img src="https://api.codeclimate.com/v1/badges/ba122e5ebf1e5392469f/maintainability" /></a>
 
 ### Linter code check
 [![Linter status](https://github.com/AlexMusin/python-project-lvl1/workflows/linter-check/badge.svg)](https://github.com/AlexMusin/python-project-lvl1/actions)
