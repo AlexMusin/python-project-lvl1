@@ -6,15 +6,14 @@ from brain_games import err_exit, greet
 ROUNDS = 3
 
 
-def logic(game_name):
+def logic(game):
     """Run game logic."""  # noqa: DAR101
     username = greet.greeting()
-    exec('from brain_games.games import game_{0}'.format(game_name))
-    rules = eval('game_{0}.RULES'.format(game_name))
+    rules = game.RULES
     print(rules)
     index = 0
     while index < ROUNDS:
-        cond, answer = eval('game_{0}.run_game()'.format(game_name))
+        cond, answer = game.run_game()
         if cond == answer:
             print('Correct!')
             index += 1
