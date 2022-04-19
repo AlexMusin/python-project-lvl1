@@ -6,7 +6,7 @@ from brain_games import err_exit, greet
 ROUNDS = 3
 
 
-def logic(game):
+def run_logic(game):
     """Run game logic."""
     username = greet.greeting()
     rules = game.RULES

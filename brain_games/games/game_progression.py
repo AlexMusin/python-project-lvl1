@@ -13,7 +13,7 @@ STEP_MIN = -10
 STEP_MAX = 10
 
 
-def run_game():  # noqa: WPS210
+def run_game():
     """Return variables for game logic."""
     progr_length = random.randint(PROGR_LENGTH_MIN, PROGR_LENGTH_MAX)
     q_index = random.randint(0, progr_length - 1)
