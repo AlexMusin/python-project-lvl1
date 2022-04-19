@@ -2,12 +2,12 @@
 """Prime game launch."""
 
 from brain_games import game_logic
-from brain_games.games import game_prime
+from brain_games.games import prime
 
 
 def main():
     """Play prime game."""
-    game_logic.run_logic(game_prime)
+    game_logic.run_logic(prime)
 
 
 if __name__ == '__main__':
