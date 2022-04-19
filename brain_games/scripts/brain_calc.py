@@ -3,12 +3,12 @@
 """Calc game launch."""
 
 from brain_games import game_logic
+from brain_games.games import game_calc
 
 
 def main():
     """Play calculator game."""
-    game_name = 'calc'
-    game_logic.logic(game_name)
+    game_logic.logic(game_calc)
 
 
 if __name__ == '__main__':
