@@ -7,7 +7,7 @@ ROUNDS = 3
 
 
 def logic(game):
-    """Run game logic."""  # noqa: DAR101
+    """Run game logic."""
     username = greet.greeting()
     rules = game.RULES
     print(rules)
