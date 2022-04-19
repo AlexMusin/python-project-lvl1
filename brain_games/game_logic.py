@@ -19,5 +19,5 @@ def run_logic(game):
             index += 1
         else:
             err_exit.error(cond, answer, username)
-        if index == 3:
-            print('Congratulations, {0}!'.format(username))
+    else:
+        print('Congratulations, {0}!'.format(username))
