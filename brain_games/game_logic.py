@@ -37,5 +37,6 @@ def run_logic(game):
             index += 1
         else:
             error(cond, answer, username)
+            break
     else:
         print('Congratulations, {0}!'.format(username))
