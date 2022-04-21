@@ -7,7 +7,7 @@ from brain_games.games import progression
 
 def main():
     """Play gcd game."""
-    game_logic.run_logic(progression)
+    game_logic.run(progression)
 
 
 if __name__ == '__main__':

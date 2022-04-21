@@ -7,7 +7,7 @@ from brain_games.games import even
 
 def main():
     """Play odd-or-even game."""
-    game_logic.run_logic(even)
+    game_logic.run(even)
 
 
 if __name__ == '__main__':

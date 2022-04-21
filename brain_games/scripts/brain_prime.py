@@ -7,7 +7,7 @@ from brain_games.games import prime
 
 def main():
     """Play prime game."""
-    game_logic.run_logic(prime)
+    game_logic.run(prime)
 
 
 if __name__ == '__main__':

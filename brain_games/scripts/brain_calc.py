@@ -8,7 +8,7 @@ from brain_games.games import calc
 
 def main():
     """Play calculator game."""
-    game_logic.run_logic(calc)
+    game_logic.run(calc)
 
 
 if __name__ == '__main__':

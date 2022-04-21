@@ -7,7 +7,7 @@ import prompt
 ROUNDS = 3
 
 
-def run_logic(game):
+def run(game):
     """Run game logic."""
     print('Welcome to the Brain Games!')
     username = prompt.string('May I have your name? ')
