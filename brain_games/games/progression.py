@@ -27,10 +27,10 @@ def run_game():
     """Return variables for game logic."""
     progression, progression_length = make_progression()
     question_index = random.randint(0, progression_length - 1)
-    condition = str(progression[question_index])
+    conditionition = str(progression[question_index])
     progression[question_index] = '..'
     question = (' '.join(map(str, progression)))
-    return (question, condition)
+    return (question, conditionition)
 
 
 if __name__ == '__main__':

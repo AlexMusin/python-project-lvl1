@@ -16,10 +16,10 @@ def greeting():
     return (username)
 
 
-def error(cond, answer, username):
+def error(condition, answer, username):
     """Say error and exit."""
     expr = ' is wrong answer ;(. Correct answer was '
-    print("'{0}'{2}'{1}'.".format(answer, cond, expr))
+    print("'{0}'{2}'{1}'.".format(answer, condition, expr))
     incorrect = "Let's try again, {0}!".format(username)
     print(incorrect)
     sys.exit(0)

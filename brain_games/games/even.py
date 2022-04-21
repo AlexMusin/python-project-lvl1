@@ -13,14 +13,14 @@ RIGHT_LIMIT = 255
 def run_game():
     """Return even-game variables."""
     number = random.randint(LEFT_LIMIT, RIGHT_LIMIT)
-    cond = number % 2 == 1
-    if cond == 0:
-        cond = 'yes'
-    elif cond == 1:
-        cond = 'no'
+    condition = number % 2 == 1
+    if condition == 0:
+        condition = 'yes'
+    elif condition == 1:
+        condition = 'no'
     print('Question: {0}'.format(number))
     answer = prompt.string('Your answer: ')
-    return (cond, answer)
+    return (condition, answer)
 
 
 if __name__ == '__main__':

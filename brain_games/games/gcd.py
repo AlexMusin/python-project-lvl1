@@ -27,10 +27,10 @@ def run_game():  # noqa: WPS231
                 divisor_list.append(index)
                 counter = index
             index += 1
-    cond = str(max(divisor_list))
+    condition = str(max(divisor_list))
     print('Question: {0} {1}'.format(number1, number2))
     answer = prompt.string('Your answer: ')
-    return (cond, answer)
+    return (condition, answer)
 
 
 if __name__ == '__main__':
