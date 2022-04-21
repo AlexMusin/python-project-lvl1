@@ -13,8 +13,8 @@ STEP_MIN = -10
 STEP_MAX = 10
 
 
-def run_game():
-    """Return variables for game logic."""
+def make_progression():
+    """Generate and return progression."""
     progr_length = random.randint(PROGR_LENGTH_MIN, PROGR_LENGTH_MAX)
     q_index = random.randint(0, progr_length - 1)
     step = random.randint(STEP_MIN, STEP_MAX)
@@ -26,6 +26,12 @@ def run_game():
     cond = str(progression[q_index])
     progression[q_index] = '..'
     progression = (' '.join(map(str, progression)))
+    return (progression, cond)
+
+
+def run_game():
+    """Return variables for game logic."""
+    progression, cond = make_progression()
     print('Question: {0}'.format(progression))
     answer = prompt.string('Your answer: ')
     return (cond, answer)
