@@ -31,7 +31,8 @@ def run_logic(game):
     rules = game.RULES
     print(rules)
     index = 0
-    while index < ROUNDS:
+    #while index < ROUNDS:
+    for index in range (0, ROUNDS):
         question, condition = game.run_game()
         print('Question: {0}'.format(question))
         answer = prompt.string('Your answer: ')
