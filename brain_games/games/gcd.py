@@ -9,8 +9,7 @@ RIGHT_LIMIT = 25
 RULES = 'Find the greatest common divisor of given numbers.'
 
 
-def run_game():  # noqa: WPS231
-    """Return variables for game logic."""
+def find_gcd():
     counter = 0
     counter2 = 0
     number1 = 1
@@ -27,10 +26,15 @@ def run_game():  # noqa: WPS231
                 divisor_list.append(index)
                 counter = index
             index += 1
-    condition = str(max(divisor_list))
-    print('Question: {0} {1}'.format(number1, number2))
-    answer = prompt.string('Your answer: ')
-    return (condition, answer)
+    gcd = str(max(divisor_list))
+    return ((number1, number2), gcd)
+
+
+def run_game():  # noqa: WPS231
+    """Return variables for game logic."""
+    question, condition = find_gcd()
+    question = (' '.join(map(str, question)))
+    return (question, condition)
 
 
 if __name__ == '__main__':

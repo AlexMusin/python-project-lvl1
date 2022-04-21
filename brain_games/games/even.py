@@ -18,9 +18,7 @@ def run_game():
         condition = 'yes'
     elif condition == 1:
         condition = 'no'
-    print('Question: {0}'.format(number))
-    answer = prompt.string('Your answer: ')
-    return (condition, answer)
+    return (number, condition)
 
 
 if __name__ == '__main__':
