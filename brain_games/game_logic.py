@@ -32,12 +32,14 @@ def run_logic(game):
     print(rules)
     index = 0
     while index < ROUNDS:
-        cond, answer = game.run_game()
-        if cond == answer:
+        question, condition = game.run_game()
+        print('Question: {0}'.format(question))
+        answer = prompt.string('Your answer: ')
+        if condition == answer:
             print('Correct!')
             index += 1
         else:
-            error(cond, answer, username)
+            error(condition, answer, username)
             break
     else:
         print('Congratulations, {0}!'.format(username))
