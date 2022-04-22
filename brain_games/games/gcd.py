@@ -2,14 +2,13 @@
 
 import random
 
-import prompt
-
 LEFT_LIMIT = -25
 RIGHT_LIMIT = 25
 RULES = 'Find the greatest common divisor of given numbers.'
 
 
 def find_gcd():
+    """Generate two non-zero integers and finds their GCD."""
     counter = 0
     counter2 = 0
     number1 = 1

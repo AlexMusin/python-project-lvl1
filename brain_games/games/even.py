@@ -3,8 +3,6 @@
 
 import random
 
-import prompt
-
 RULES = 'Answer "yes" if the number is even, otherwise answer "no".'
 LEFT_LIMIT = -256
 RIGHT_LIMIT = 255

@@ -1,7 +1,5 @@
 """Brain-game logic."""
 
-import sys
-
 import prompt
 
 ROUNDS = 3
@@ -15,8 +13,7 @@ def run(game):
     print(greet)
     rules = game.RULES
     print(rules)
-    index = 0
-    for index in range (0, ROUNDS):
+    for index in range(0, ROUNDS):
         question, condition = game.run_game()
         print('Question: {0}'.format(question))
         answer = prompt.string('Your answer: ')

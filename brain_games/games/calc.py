@@ -2,7 +2,7 @@
 
 import random
 
-import prompt
+import numexpr
 
 LEFT_LIMIT = -10
 RIGHT_LIMIT = 10
@@ -15,10 +15,9 @@ def run_game():
     number1 = random.randint(LEFT_LIMIT, RIGHT_LIMIT)
     number2 = random.randint(LEFT_LIMIT, RIGHT_LIMIT)
     action = random.choice(ACTION_LIST)
-    condition = str(eval('{0} {2} {1}'.format(number1, number2, action)))
-    print('Question: {0} {2} {1}'.format(number1, number2, action))
-    answer = prompt.string('Your answer: ')
-    return (condition, answer)
+    question = '{0} {2} {1}'.format(number1, number2, action)
+    condition = str(numexpr.evaluate(question))
+    return (question, condition)
 
 
 if __name__ == '__main__':
