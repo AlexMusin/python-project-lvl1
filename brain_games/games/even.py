@@ -11,12 +11,12 @@ RIGHT_LIMIT = 255
 def run_game():
     """Return even-game variables."""
     number = random.randint(LEFT_LIMIT, RIGHT_LIMIT)
-    condition = number % 2 == 1
-    if condition == 0:
-        condition = 'yes'
-    elif condition == 1:
-        condition = 'no'
-    return (number, condition)
+    right_answer = number % 2 == 1
+    if right_answer == 0:
+        right_answer = 'yes'
+    elif right_answer == 1:
+        right_answer = 'no'
+    return (number, right_answer)
 
 
 if __name__ == '__main__':

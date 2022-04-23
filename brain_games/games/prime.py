@@ -21,8 +21,8 @@ def detect_prime(given_number):
 def run_game():
     """Return variables for game logic."""
     given_number = random.randint(LEFT_LIMIT, RIGHT_LIMIT)
-    condition = 'yes' if detect_prime(given_number) else 'no'
-    return (given_number, condition)
+    right_answer = 'yes' if detect_prime(given_number) else 'no'
+    return (given_number, right_answer)
 
 
 if __name__ == '__main__':

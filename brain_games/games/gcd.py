@@ -29,11 +29,11 @@ def find_gcd():
     return ((number1, number2), gcd)
 
 
-def run_game():  # noqa: WPS231
+def run_game():
     """Return variables for game logic."""
-    question, condition = find_gcd()
+    question, right_answer = find_gcd()
     question = (' '.join(map(str, question)))
-    return (question, condition)
+    return (question, right_answer)
 
 
 if __name__ == '__main__':
