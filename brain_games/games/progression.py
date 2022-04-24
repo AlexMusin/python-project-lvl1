@@ -23,7 +23,7 @@ def make_progression():
     return (progression, progression_length)
 
 
-def run_game():
+def run_round():
     """Return variables for game logic."""
     progression, progression_length = make_progression()
     question_index = random.randint(0, progression_length - 1)
@@ -34,4 +34,4 @@ def run_game():
 
 
 if __name__ == '__main__':
-    run_game()
+    run_round()

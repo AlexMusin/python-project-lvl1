@@ -35,7 +35,7 @@ def find_gcd():
     return ((number1, number2), gcd)
 
 
-def run_game():
+def run_round():
     """Return variables for game logic."""
     question, right_answer = find_gcd()
     question = (' '.join(map(str, question)))
@@ -43,4 +43,4 @@ def run_game():
 
 
 if __name__ == '__main__':
-    run_game()
+    run_round()
