@@ -19,7 +19,8 @@ def run(game):
             print('Correct!')
             index += 1
         else:
-            print(f"'{user_answer}' is wrong answer ;(. Correct answer was '{right_answer}'.")
+            expression = 'is wrong answer ;(. Correct answer was'
+            print(f"'{user_answer}' {expression} '{right_answer}'.")
             print("Let's try again, {0}!".format(username))
             break
     else:
