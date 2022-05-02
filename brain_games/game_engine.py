@@ -17,7 +17,6 @@ def run(game):
         user_answer = prompt.string('Your answer: ')
         if right_answer == user_answer:
             print('Correct!')
-            index += 1
         else:
             expression = 'is wrong answer ;(. Correct answer was'
             print(f"'{user_answer}' {expression} '{right_answer}'.")
