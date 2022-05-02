@@ -2,20 +2,14 @@
 
 import random
 
-LEFT_LIMIT = -25
 RIGHT_LIMIT = 25
 RULES = 'Find the greatest common divisor of given numbers.'
 
 
 def generate_input():
     """Generate two non-zero integers."""
-    counter2 = 0
-    number1 = 1
-    number2 = 1
-    while number1 != 0 and number2 != 0 and counter2 == 0:
-        number1 = random.randint(LEFT_LIMIT, RIGHT_LIMIT)
-        number2 = random.randint(LEFT_LIMIT, RIGHT_LIMIT)
-        counter2 += 1
+    number1 = random.randint(1, RIGHT_LIMIT)
+    number2 = random.randint(1, RIGHT_LIMIT)
     return (number1, number2)
 
 
