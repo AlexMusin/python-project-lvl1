@@ -1,5 +1,6 @@
 """Prime game."""
 
+import math
 import random
 
 LEFT_LIMIT = 1
@@ -9,12 +10,10 @@ RULES = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 def is_prime(number):
     """Decide if given number is prime or not. Return 0 or 1."""
-    is_prime = 1
-    for divisor in range(2, number // 2 + 1):
+    for divisor in range(2, int(math.sqrt(number)) + 1):
         if not number % divisor:
-            is_prime = 0
-            break
-    return (is_prime)
+            return (False)
+    return (True)
 
 
 def run_round():
