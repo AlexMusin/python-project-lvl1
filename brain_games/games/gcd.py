@@ -13,10 +13,10 @@ def generate_input():
     return (number1, number2)
 
 
-def find_gcd():
+def find_gcd(inp_tuple):
     """Find GCD."""
     counter = 0
-    number1, number2 = generate_input()
+    number1, number2 = inp_tuple
     while counter == 0:
         divisor = 1
         divisor_list = []
@@ -31,7 +31,7 @@ def find_gcd():
 
 def run_round():
     """Return variables for game logic."""
-    question, right_answer = find_gcd()
+    question, right_answer = find_gcd(generate_input())
     question = (' '.join(map(str, question)))
     return (question, right_answer)
 
