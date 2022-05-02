@@ -7,11 +7,11 @@ RIGHT_LIMIT = 53
 RULES = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
-def detect_prime(given_number):
+def is_prime(number):
     """Decide if given number is prime or not. Return 0 or 1."""
     is_prime = 1
-    for divisor in range(2, given_number // 2 + 1):
-        if not given_number % divisor:
+    for divisor in range(2, number // 2 + 1):
+        if not number % divisor:
             is_prime = 0
             break
     return (is_prime)
@@ -20,7 +20,7 @@ def detect_prime(given_number):
 def run_round():
     """Return variables for game logic."""
     given_number = random.randint(LEFT_LIMIT, RIGHT_LIMIT)
-    right_answer = 'yes' if detect_prime(given_number) else 'no'
+    right_answer = 'yes' if is_prime(given_number) else 'no'
     return (given_number, right_answer)
 
 
