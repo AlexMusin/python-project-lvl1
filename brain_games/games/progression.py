@@ -12,7 +12,7 @@ STEP_MAX = 10
 
 
 def make_progression():
-    """Generate and return progression and its length."""
+    """Generate and return progression and right_answer."""
     progression_length = random.randint(PROGR_LENGTH_MIN, PROGR_LENGTH_MAX)
     step = random.randint(STEP_MIN, STEP_MAX)
     element = random.randint(LEFT_LIMIT, RIGHT_LIMIT)
@@ -29,8 +29,7 @@ def make_progression():
 
 def run_round():
     """Return variables for game logic."""
-    progression, right_answer = make_progression()
-    return (progression, right_answer)
+    return (make_progression())
 
 
 if __name__ == '__main__':

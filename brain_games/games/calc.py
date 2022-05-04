@@ -13,7 +13,7 @@ def run_round():
     number1 = random.randint(LEFT_LIMIT, RIGHT_LIMIT)
     number2 = random.randint(LEFT_LIMIT, RIGHT_LIMIT)
     operation = random.choice(OPERATORS_LIST)
-    question = '{0} {2} {1}'.format(number1, number2, operation)
+    question = f'{number1} {operation} {number2}'
     if operation == '*':
         right_answer = number1 * number2
     elif operation == '-':

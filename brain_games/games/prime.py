@@ -18,9 +18,9 @@ def is_prime(number):
 
 def run_round():
     """Return variables for game logic."""
-    given_number = random.randint(LEFT_LIMIT, RIGHT_LIMIT)
-    right_answer = 'yes' if is_prime(given_number) else 'no'
-    return (given_number, right_answer)
+    number = random.randint(LEFT_LIMIT, RIGHT_LIMIT)
+    right_answer = 'yes' if is_prime(number) else 'no'
+    return (number, right_answer)
 
 
 if __name__ == '__main__':
