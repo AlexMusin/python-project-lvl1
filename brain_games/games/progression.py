@@ -23,7 +23,7 @@ def make_progression():
     question_index = random.randint(0, progression_length - 1)
     right_answer = str(progression[question_index])
     progression[question_index] = '..'
-    progression = str(progression).strip('[]')
+    progression = ' '.join(map(str, progression))
     return (progression, right_answer)
 
 
