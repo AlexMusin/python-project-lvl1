@@ -9,7 +9,7 @@ RULES = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
 def is_prime(number):
-    """Decide if given number is prime or not. Return 0 or 1."""
+    """Decide if given number is prime or not. Return boolean."""
     for divisor in range(2, int(math.sqrt(number)) + 1):
         if not number % divisor:
             return (False)
