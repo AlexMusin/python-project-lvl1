@@ -17,11 +17,13 @@ def run_round():
     step = random.randint(STEP_MIN, STEP_MAX)
     element = random.randint(LEFT_LIMIT, RIGHT_LIMIT)
     progression = ''
-    counter = 0
+    counter = 1
     question_index = random.randint(0, progression_length - 1)
     while counter + 1 <= progression_length:
-        if counter == question_index:
-            progression = f'{progression} ..'
+        if counter == 0:
+            progression = str(element)
+        elif counter == question_index:
+            progression = f'{progression} ..' if counter != 0 else '..'
             right_answer = str(element)
         else:
             progression = f'{progression} {element}'
