@@ -11,7 +11,7 @@ def run(game):
     username = prompt.string('May I have your name? ')
     print('Hello, {0}!'.format(username))
     print(game.RULES)
-    for index in range(0, ROUNDS):
+    for _ in range(0, ROUNDS):
         question, right_answer = game.run_round()
         print('Question: {0}'.format(question))
         user_answer = prompt.string('Your answer: ')
