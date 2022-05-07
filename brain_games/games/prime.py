@@ -22,6 +22,3 @@ def run_round():
     right_answer = 'yes' if is_prime(number) else 'no'
     return (number, right_answer)
 
-
-if __name__ == '__main__':
-    run_round()
