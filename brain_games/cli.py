@@ -1,4 +1,3 @@
-#!/usr/bin/env python
 """Ask username and return greeting."""
 
 import prompt
