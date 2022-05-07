@@ -21,11 +21,10 @@ def run_round():
     question_index = random.randint(0, progression_length - 1)
     while counter + 1 <= progression_length:
         if counter == question_index:
-            progression = progression + ' ..'
+            progression = f'{progression} ..'
             right_answer = str(element)
         else:
-            progression = progression + f' {element}'
+            progression = f'{progression} {element}'
         element += step
         counter += 1
     return (progression, right_answer)
-

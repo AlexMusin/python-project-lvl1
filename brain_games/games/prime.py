@@ -21,4 +21,3 @@ def run_round():
     number = random.randint(LEFT_LIMIT, RIGHT_LIMIT)
     right_answer = 'yes' if is_prime(number) else 'no'
     return (number, right_answer)
-
