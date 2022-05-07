@@ -16,12 +16,16 @@ def run_round():
     progression_length = random.randint(PROGR_LENGTH_MIN, PROGR_LENGTH_MAX)
     step = random.randint(STEP_MIN, STEP_MAX)
     element = random.randint(LEFT_LIMIT, RIGHT_LIMIT)
-    progression = []
-    while len(progression) <= progression_length:
-        progression.append(element)
-        element += step
+    progression = ''
+    counter = 0
     question_index = random.randint(0, progression_length - 1)
-    right_answer = str(progression[question_index])
-    progression[question_index] = '..'
-    progression = ' '.join(map(str, progression))
+    while counter + 1 <= progression_length:
+        if counter == question_index:
+            progression = progression + ' ..'
+            right_answer = str(element)
+        else:
+            progression = progression + f' {element}'
+        element += step
+        counter += 1
     return (progression, right_answer)
+
