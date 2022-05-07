@@ -12,8 +12,8 @@ def is_prime(number):
     """Decide if given number is prime or not. Return boolean."""
     for divisor in range(2, int(math.sqrt(number)) + 2):
         if not number % divisor:
-            return (False)
-    return (True)
+            return False
+    return True
 
 
 def run_round():
