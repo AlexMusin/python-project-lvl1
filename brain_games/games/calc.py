@@ -18,11 +18,7 @@ def run_round():
         right_answer = number1 * number2
     elif operation == '-':
         right_answer = number1 - number2
-    else:
+    elif operation == '+':
         right_answer = number1 + number2
     right_answer = str(right_answer)
     return (question, right_answer)
-
-
-if __name__ == '__main__':
-    run_round()
