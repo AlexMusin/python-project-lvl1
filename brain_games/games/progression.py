@@ -23,7 +23,7 @@ def run_round():
         if counter == 0:
             progression = str(element)
         elif counter == question_index:
-            progression = '..' if counter == 0 else f'{progression} ..'
+            progression = '..' if question_index == 0 else f'{progression} ..'
             right_answer = str(element)
         else:
             progression = f'{progression} {element}'
