@@ -4,14 +4,9 @@
 from brain_games import cli
 
 
-def say_welcome():
-    """Say Welcome."""
-    return ('Welcome to the Brain Games!')
-
-
 def main():
-    """Define main function."""
-    print(say_welcome())
+    """Welcome user."""
+    print('Welcome to the Brain Games!')
     cli.welcome_user()
 
 
