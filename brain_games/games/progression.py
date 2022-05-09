@@ -17,7 +17,7 @@ def run_round():
     step = random.randint(STEP_MIN, STEP_MAX)
     element = random.randint(LEFT_LIMIT, RIGHT_LIMIT)
     progression = []
-    while len(progression) <= progression_length:
+    for _ in range(progression_length):
         progression.append(str(element))
         element += step
     random_index = random.randint(0, progression_length - 1)
