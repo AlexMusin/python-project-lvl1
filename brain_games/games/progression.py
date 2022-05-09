@@ -23,7 +23,7 @@ def run_round():
         progression.append(str(element))
         element += step
     random_index = random.randint(0, progression_length - 1)
-    right_answer = str(progression[random_index])
+    right_answer = progression[random_index]
     progression[random_index] = '..'
     progression = ' '.join(progression)
     return (progression, right_answer)
