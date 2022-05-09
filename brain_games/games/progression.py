@@ -20,8 +20,8 @@ def run_round():
     while len(progression) <= progression_length:
         progression.append(str(element))
         element += step
-    question_index = random.randint(0, progression_length - 1)
-    right_answer = str(progression[question_index])
-    progression[question_index] = '..'
+    random_index = random.randint(0, progression_length - 1)
+    right_answer = str(progression[random_index])
+    progression[random_index] = '..'
     progression = ' '.join(progression)
     return (progression, right_answer)
