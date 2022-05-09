@@ -5,15 +5,15 @@ import random
 RULES = 'What number is missing in the progression?'
 LEFT_LIMIT = -25
 RIGHT_LIMIT = 25
-PROGR_LENGTH_MIN = 5
-PROGR_LENGTH_MAX = 12
+PROGRESSION_MIN_LENGTH = 5
+PROGRESSION_MAX_LENGTH = 12
 STEP_MIN = -10
 STEP_MAX = 10
 
 
 def run_round():
     """Return variables for game logic."""
-    progression_length = random.randint(PROGR_LENGTH_MIN, PROGR_LENGTH_MAX)
+    progression_length = random.randint(PROGRESSION_MIN_LENGTH, PROGRESSION_MAX_LENGTH)
     step = random.randint(STEP_MIN, STEP_MAX)
     element = random.randint(LEFT_LIMIT, RIGHT_LIMIT)
     progression = []
