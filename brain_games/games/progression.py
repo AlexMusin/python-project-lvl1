@@ -13,7 +13,9 @@ STEP_MAX = 10
 
 def run_round():
     """Return variables for game logic."""
-    progression_length = random.randint(PROGRESSION_MIN_LENGTH, PROGRESSION_MAX_LENGTH)
+    progression_length = random.randint(
+        PROGRESSION_MIN_LENGTH, PROGRESSION_MAX_LENGTH,
+    )
     step = random.randint(STEP_MIN, STEP_MAX)
     element = random.randint(LEFT_LIMIT, RIGHT_LIMIT)
     progression = []
