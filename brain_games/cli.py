@@ -6,7 +6,7 @@ import prompt
 def welcome_user():
     """Ask username."""
     name = prompt.string('May I have your name? ')
-    print('Hello, {0}!'.format(name))
+    print(f'Hello, {name}!')
 
 
 def main():
